@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros de Thriller</title>
+    <style>
+        :root {
+            --color-fondo: #f5ebe0;
+            --color-texto: #3d251e;
+            --color-principal: #5c3d2e;
+            --color-secundario: #7f5539;
+            --color-tarjeta: #e3d5ca;
+            --color-hover: #b08968;
+        }
+
+        body {
+            background-color: var(--color-fondo);
+            color: var(--color-texto);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .banner {
+            width: 100%;
+            height: 15rem;
+            display: block;
+        }
+
+        .menu {
+            background-color: var(--color-principal);
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+        }
+
+        .menu a {
+            color: var(--color-fondo);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: var(--color-secundario);
+        }
+
+        .menu a:hover {
+            background-color: var(--color-hover);
+            color: #ffffff;
+        }
+
+        .contenedor {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .titulo-principal {
+            color: #4a2c2a;
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .subtitulo {
+            color: var(--color-secundario);
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .galeria-libros {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .tarjeta-portada {
+            background-color: var(--color-tarjeta);
+            padding: 15px;
+            margin: 10px;
+            width: 200px;
+        }
+
+        .tarjeta-portada img {
+            width: 180px;
+            height: 270px;
+        }
+
+        .tarjeta-portada p {
+            font-weight: bold;
+            color: var(--color-texto);
+            margin-top: 10px;
+        }
+
+        .seccion-sinopsis {
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .caja-sinopsis {
+            background-color: #ede0d4;
+            border-left: 8px solid var(--color-secundario);
+            padding: 25px;
+            margin: 30px auto;
+            width: 80%;
+            text-align: left;
+        }
+
+        .caja-sinopsis h3 {
+            color: var(--color-principal);
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        .autor {
+            font-style: italic;
+            color: var(--color-secundario);
+            font-weight: bold;
+        }
+
+        .texto-sinopsis {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .boton-volver {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 15px;
+            background-color: var(--color-secundario);
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .boton-volver:hover {
+            background-color: var(--color-principal);
+        }
+
+        footer {
+            background-color: var(--color-texto);
+            color: var(--color-tarjeta);
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="arriba">
+        <img class="banner" src="./asset/img/banner.jpg" alt="Banner">
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="fantasia.html">Fantasía</a>
+            <a href="romance.html">Romance</a>
+            <a href="thriller.html">Thriller</a>
+            <a href="infantil.html">Infantiles</a>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        <h1 class="titulo-principal">Thriller</h1>
+        <p class="subtitulo">Tocá una portada para leer su sinopsis</p>
+
+        <div class="galeria-libros">
+            <div class="tarjeta-portada">
+                <a href="#cadaver"><img src="./asset/img/Thriller/cadaver exquisito.jpg" alt="Cadáver exquisito"></a>
+                <p>Cadáver exquisito</p>
+            </div>
+            <div class="tarjeta-portada">
+                <a href="#it"><img src="./asset/img/Thriller/it.jpg" alt="It (Eso)"></a>
+                <p>It (Eso)</p>
+            </div>
+            <div class="tarjeta-portada">
+                <a href="#paciente"><img src="./asset/img/Thriller/la paciente silenciosa.jpg" alt="La paciente silenciosa"></a>
+                <p>La paciente silenciosa</p>
+            </div>
+            <div class="tarjeta-portada">
+                <a href="#verity"><img src="./asset/img/Thriller/Verity.jpg" alt="Verity"></a>
+                <p>Verity</p>
+            </div>
+        </div>
+
+        <div class="seccion-sinopsis">
+            <div id="cadaver" class="caja-sinopsis">
+                <h3>Cadáver exquisito</h3>
+                <p class="autor">Autora: Agustina Bazterrica</p>
+                <p class="texto-sinopsis">En un mundo apocalíptico donde un virus letal ha aniquilado a todos los
+                    animales del planeta, la carne de origen animal deja de existir para el consumo humano. Ante la
+                    desesperación, los gobiernos legalizan la cría, el procesamiento y la comercialización de carne
+                    humana, normalizando el canibalismo institucionalizado bajo denominaciones eufemísticas como «carne
+                    especial». La historia sigue a Marcos Tejo, un empleado de un frigorífico de carne humana que
+                    transita su rutina diaria con desidia y un profundo dolor personal tras la desaparición de su hijo.
+                    Su vida da un giro oscuro cuando, como compensación por sus servicios, le obsequian una mujer de
+                    «primera calidad» destinada al matadero, obligándolo a cuestionar los límites morales de un sistema
+                    atroz.</p>
+                <a href="#arriba" class="boton-volver">Volver arriba</a>
+            </div>
+
+            <div id="it" class="caja-sinopsis">
+                <h3>It (Eso)</h3>
+                <p class="autor">Autor: Stephen King</p>
+                <p class="texto-sinopsis">En la pequeña localidad de Derry, Maine, un grupo de siete amigos
+                    incomprendidos, autodenominados «El Club de los Perdedores», se enfrenta durante su infancia a sus
+                    mayores miedos cuando una siniestra y cambiante entidad maligna, que suele adoptar la forma de un
+                    payaso llamado Pennywise, comienza a secuestrar y asesinar a los niños del pueblo cada veintisiete
+                    años. Tras una intensa y aterradora batalla en las alcantarillas, logran vencerlo aparentemente y
+                    juran regresar si alguna vez vuelve a despertar. Veintisiete años más tarde, las llamadas de un
+                    Derry sumido nuevamente en desapariciones los obligan a cumplir su promesa y reunirse como adultos
+                    para acabar definitivamente con el monstruo que marcó sus infancias.</p>
+                <a href="#arriba" class="boton-volver">Volver arriba</a>
+            </div>
+
+            <div id="paciente" class="caja-sinopsis">
+                <h3>La paciente silenciosa</h3>
+                <p class="autor">Autor: Alex Michaelides</p>
+                <p class="texto-sinopsis">Alicia Berenson es una pintora de éxito casada con Gabriel, un reconocido
+                    fotógrafo de moda. A sus treinta y tantos años, su vida parece perfecta hasta que, una noche,
+                    Gabriel regresa tarde a casa y Alicia le dispara cinco veces en el rostro, negándose a volver a
+                    hablar jamás. Su absoluto silencio convierte el crimen en un misterio obsesivo para la opinión
+                    pública y la condena al aislamiento en una unidad psiquiátrica de máxima seguridad. Años más tarde,
+                    Theo Faber, un psicoterapeuta forense obsesionado con su caso, consigue una plaza en el hospital
+                    dispuesto a descifrar los motivos detrás del mutismo de Alicia y lograr que vuelva a hablar,
+                    desenterrando una red de secretos que supera todas sus expectativas.</p>
+                <a href="#arriba" class="boton-volver">Volver arriba</a>
+            </div>
+
+            <div id="verity" class="caja-sinopsis">
+                <h3>Verity: La sombra de un engaño</h3>
+                <p class="autor">Autora: Colleen Hoover</p>
+                <p class="texto-sinopsis">Lowen Ashleigh es una escritora en apuros económicos que acepta una oferta de
+                    trabajo que podría cambiarle la vida: completar los tres libros restantes de una exitosa serie
+                    escrita por Verity Crawford, quien se encuentra postrada en cama e incapaz de escribir tras sufrir
+                    un trágico accidente. Para ponerse al día con el material, Lowen se instala temporalmente en la casa
+                    del matrimonio, donde también vive Jeremy, el esposo de Verity. Entre papeles y borradores, Lowen
+                    encuentra un manuscrito autobiográfico oculto, escrito por la propia Verity, que contiene
+                    perturbadoras confesiones sobre la familia y la mente de la autora. Este descubrimiento pondrá en
+                    peligro tanto su propia vida como su incipiente atracción por Jeremy.</p>
+                <a href="#arriba" class="boton-volver">Volver arriba</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Proyecto Final Taller Web I - CET N° 30</p>
+    </footer>
+
+</body>
+
+</html>

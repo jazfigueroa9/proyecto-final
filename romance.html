@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros de Romance</title>
+    <style>
+        :root {
+            --color-fondo: #f5ebe0;
+            --color-texto: #3d251e;
+            --color-principal: #5c3d2e;
+            --color-secundario: #7f5539;
+            --color-tarjeta: #e3d5ca;
+            --color-hover: #b08968;
+        }
+
+        body {
+            background-color: var(--color-fondo);
+            color: var(--color-texto);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .banner {
+            width: 100%;
+            height: 15rem;
+            display: block;
+        }
+
+        .menu {
+            background-color: var(--color-principal);
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+        }
+
+        .menu a {
+            color: var(--color-fondo);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: var(--color-secundario);
+        }
+
+        .menu a:hover {
+            background-color: var(--color-hover);
+            color: #ffffff;
+        }
+
+        .contenedor {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .titulo-principal {
+            color: #4a2c2a;
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .subtitulo {
+            color: var(--color-secundario);
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .galeria-libros {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .tarjeta-portada {
+            background-color: var(--color-tarjeta);
+            padding: 15px;
+            margin: 10px;
+            width: 200px;
+        }
+
+        .tarjeta-portada img {
+            width: 180px;
+            height: 270px;
+        }
+
+        .tarjeta-portada p {
+            font-weight: bold;
+            color: var(--color-texto);
+            margin-top: 10px;
+        }
+
+        .seccion-sinopsis {
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .caja-sinopsis {
+            background-color: #ede0d4;
+            border-left: 8px solid var(--color-secundario);
+            padding: 25px;
+            margin: 30px auto;
+            width: 80%;
+            text-align: left;
+        }
+
+        .caja-sinopsis h3 {
+            color: var(--color-principal);
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        .autor {
+            font-style: italic;
+            color: var(--color-secundario);
+            font-weight: bold;
+        }
+
+        .texto-sinopsis {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .boton-volver {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 15px;
+            background-color: var(--color-secundario);
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .boton-volver:hover {
+            background-color: var(--color-principal);
+        }
+
+        footer {
+            background-color: var(--color-texto);
+            color: var(--color-tarjeta);
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="arriba">
+        <img class="banner" src="./asset/img/banner.jpg" alt="Banner">
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="fantasia.html">Fantasía</a>
+            <a href="romance.html">Romance</a>
+            <a href="thriller.html">Thriller</a>
+            <a href="infantil.html">Infantiles</a>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        <h1 class="titulo-principal">Romance</h1>
+        <p class="subtitulo">Tocá una portada para leer su sinopsis</p>
+
+        <div class="galeria-libros">
+            <div class="tarjeta-portada">
+                <a href="#mapa"><img src="./asset/img/Romance/el mapa de los anhelos.jpg" alt="El mapa de los anhelos"></a>
+                <p>El mapa de los anhelos</p>
+            </div>
+            <div class="tarjeta-portada">
+                <a href="#evelyn"><img src="./asset/img/Romance/los 7 maridos.jpg" alt="Los siete maridos de Evelyn Hugo"></a>
+                <p>Los siete maridos de Evelyn Hugo</p>
+            </div>
+            <div class="tarjeta-portada">
+                <a href="#orgullo"><img src="./asset/img/Romance/orgullo y prejucio.jpg" alt="Orgullo y prejuicio"></a>
+                <p>Orgullo y prejuicio</p>
+            </div>
+            <div class="tarjeta-portada">
+                <a href="#luna"><img src="./asset/img/Romance/una luna sin miel.jpg" alt="Una luna sin miel"></a>
+                <p>Una luna sin miel</p>
+            </div>
+        </div>
+
+        <div class="seccion-sinopsis">
+            <div id="mapa" class="caja-sinopsis">
+                <h3>El mapa de los anhelos</h3>
+                <p class="autor">Autora: Alice Kellen</p>
+                <p class="texto-sinopsis">Grace Collins está completamente perdida, atrapada en el dolor y en la sombra
+                    de la muerte de su hermana menor, sintiendo que su propia vida se ha detenido por completo. Tras su
+                    fallecimiento, Grace recibe un peculiar sobre: un mapa de anhelos dejado por su hermana que la
+                    desafía a cumplir una serie de retos en un tiempo límite para superar sus miedos y volver a empezar.
+                    En este camino se cruza con Will, un chico enigmático y solitario que también arrastra sus propias
+                    cicatrices y secretos. Juntos se embarcarán en un viaje emocional que les cambiará la vida para
+                    siempre.</p>
+                <a href="#arriba" class="boton-volver">Volver arriba</a>
+            </div>
+
+            <div id="evelyn" class="caja-sinopsis">
+                <h3>Los siete maridos de Evelyn Hugo</h3>
+                <p class="autor">Autora: Taylor Jenkins Reid</p>
+                <p class="texto-sinopsis">Evelyn Hugo, la legendaria y retirada estrella de Hollywood que alcanzó la
+                    fama mundial durante la época dorada del cine, decide finalmente contar la verdad sobre su glamorosa
+                    y escandalosa vida. A punto de cumplir ochenta años, elige a Monique Grant, una periodista de una
+                    revista poco conocida y con una carrera estancada, para que escriba su biografía definitiva. A lo
+                    largo de las entrevistas, Evelyn relata sin filtros su ascenso desde los orígenes más humildes de
+                    Nueva York hasta la cima del cine, revelando la verdad detrás de sus famosos siete matrimonios, un
+                    gran amor prohibido y un secreto devastador que cambiará sus vidas.</p>
+                <a href="#arriba" class="boton-volver">Volver arriba</a>
+            </div>
+
+            <div id="orgullo" class="caja-sinopsis">
+                <h3>Orgullo y prejuicio</h3>
+                <p class="autor">Autora: Jane Austen</p>
+                <p class="texto-sinopsis">Ambientada en la Inglaterra de principios del siglo XIX, la historia sigue a
+                    la inteligente e independiente Elizabeth Bennet, la segunda de cinco hermanas, cuya madre está
+                    obsesionada con casarlas ventajosamente ante la inminente pérdida del patrimonio familiar. La
+                    llegada al vecindario de un joven rico y apuesto, el señor Bingley, y de su arrogante y adinerado
+                    amigo, el señor Darcy, desencadena una serie de enredos sociales. Mientras Darcy choca inicialmente
+                    con el ingenio y los prejuicios de Elizabeth debido a su aparente orgullo de clase, ambos deberán
+                    aprender a superar sus propios defectos, malentendidos y las presiones sociales para descubrir el
+                    amor verdadero.</p>
+                <a href="#arriba" class="boton-volver">Volver arriba</a>
+            </div>
+
+            <div id="luna" class="caja-sinopsis">
+                <h3>Una luna sin miel</h3>
+                <p class="autor">Autoras: Christina Lauren</p>
+                <p class="texto-sinopsis">Olive Torres es la eterna desafortunada, la hermana gemela que siempre parece
+                    salir perdiendo frente a la perfecta y afortunada Ami. Por azares del destino, Olive se ve obligada
+                    a asistir a la boda de su hermana junto a Ethan Thomas, el hermano del novio y su mayor enemigo, con
+                    quien no se soporta. Cuando una intoxicación alimentaria arruina la boda y afecta a todos los
+                    invitados, excepto a ellos dos, el viaje de luna de miel pagado a Maui queda libre. Ninguno quiere
+                    desaprovecharlo, por lo que deciden fingir ser una pareja de recién casados para disfrutar de unas
+                    vacaciones de lujo gratis, sin imaginar que la línea entre el odio y la atracción comenzará a
+                    desdibujarse rápidamente.</p>
+                <a href="#arriba" class="boton-volver">Volver arriba</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Proyecto Final Taller Web I - CET N° 30</p>
+    </footer>
+
+</body>
+
+</html>

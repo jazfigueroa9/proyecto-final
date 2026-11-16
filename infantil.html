@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros Infantiles</title>
+    <style>
+        :root {
+            --color-fondo: #f5ebe0;
+            --color-texto: #3d251e;
+            --color-principal: #5c3d2e;
+            --color-secundario: #7f5539;
+            --color-tarjeta: #e3d5ca;
+            --color-hover: #b08968;
+        }
+
+        body {
+            background-color: var(--color-fondo);
+            color: var(--color-texto);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .banner {
+            width: 100%;
+            height: 15rem;
+            display: block;
+        }
+
+        .menu {
+            background-color: var(--color-principal);
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+        }
+
+        .menu a {
+            color: var(--color-fondo);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: var(--color-secundario);
+        }
+
+        .menu a:hover {
+            background-color: var(--color-hover);
+            color: #ffffff;
+        }
+
+        .contenedor {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .titulo-principal {
+            color: #4a2c2a;
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .subtitulo {
+            color: var(--color-secundario);
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .galeria-libros {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .tarjeta-portada {
+            background-color: var(--color-tarjeta);
+            padding: 15px;
+            margin: 10px;
+            width: 200px;
+        }
+
+        .tarjeta-portada img {
+            width: 180px;
+            height: 270px;
+        }
+
+        .tarjeta-portada p {
+            font-weight: bold;
+            color: var(--color-texto);
+            margin-top: 10px;
+        }
+
+        .seccion-sinopsis {
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .caja-sinopsis {
+            background-color: #ede0d4;
+            border-left: 8px solid var(--color-secundario);
+            padding: 25px;
+            margin: 30px auto;
+            width: 80%;
+            text-align: left;
+        }
+
+        .caja-sinopsis h3 {
+            color: var(--color-principal);
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        .autor {
+            font-style: italic;
+            color: var(--color-secundario);
+            font-weight: bold;
+        }
+
+        .texto-sinopsis {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .boton-volver {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 15px;
+            background-color: var(--color-secundario);
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .boton-volver:hover {
+            background-color: var(--color-principal);
+        }
+
+        footer {
+            background-color: var(--color-texto);
+            color: var(--color-tarjeta);
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="arriba">
+        <img class="banner" src="./asset/img/banner.jpg" alt="Banner">
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="fantasia.html">Fantasía</a>
+            <a href="romance.html">Romance</a>
+            <a href="thriller.html">Thriller</a>
+            <a href="infantil.html">Infantiles</a>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        <h1 class="titulo-principal">Infantiles</h1>
+        <p class="subtitulo">Tocá una portada para leer su sinopsis</p>
+
+        <div class="galeria-libros">
+            <div class="tarjeta-portada">
+                <a href="#caperucita"><img src="./asset/img/Infantil/caperucita roja.jpg" alt="Caperucita Roja"></a>
+                <p>Caperucita Roja</p>
+            </div>
+            <div class="tarjeta-portada">
+                <a href="#principito"><img src="./asset/img/Infantil/el principito.jpg" alt="El Principito"></a>
+                <p>El Principito</p>
+            </div>
+            <div class="tarjeta-portada">
+                <a href="#chanchitos"><img src="./asset/img/Infantil/Los tres chanchitos.jpg" alt="Los tres chanchitos"></a>
+                <p>Los tres chanchitos</p>
+            </div>
+            <div class="tarjeta-portada">
+                <a href="#pooh"><img src="./asset/img/Infantil/winniw pooh.jpg" alt="Winnie the Pooh"></a>
+                <p>Winnie the Pooh</p>
+            </div>
+        </div>
+
+        <div class="seccion-sinopsis">
+            <div id="caperucita" class="caja-sinopsis">
+                <h3>Caperucita Roja</h3>
+                <p class="autor">Autores: Hermanos Grimm / Charles Perrault</p>
+                <p class="texto-sinopsis">Una niña risueña recibe el encargo de su madre de llevar una canasta con
+                    alimentos a su abuela enferma, quien vive al otro lado del bosque. En el camino, Caperucita
+                    desobedece las advertencias y se distrae conversando con un astuto lobo. El animal se adelanta hacia
+                    la casa de la anciana para engañarla, tomar su lugar y esperar a la niña, dando lugar a una historia
+                    clásica sobre la prudencia y el peligro de confiar en desconocidos.</p>
+                <a href="#arriba" class="boton-volver">Volver arriba</a>
+            </div>
+
+            <div id="principito" class="caja-sinopsis">
+                <h3>El Principito</h3>
+                <p class="autor">Autor: Antoine de Saint-Exupéry</p>
+                <p class="texto-sinopsis">Un aviador queda varado en el desierto del Sahara tras sufrir una avería en su
+                    avión. Allí conoce a un misterioso niño, el Principito, proveniente del pequeño asteroide B 612. A
+                    través de sus relatos sobre su viaje por diversos planetas y los singulares personajes que ha
+                    conocido, como un rey, un vanidoso, un zorro y su amada rosa, la historia ofrece una profunda
+                    reflexión sobre el amor, la amistad, la pérdida y la importancia de mirar el mundo con el corazón,
+                    ya que «lo esencial es invisible a los ojos».</p>
+                <a href="#arriba" class="boton-volver">Volver arriba</a>
+            </div>
+
+            <div id="chanchitos" class="caja-sinopsis">
+                <h3>Los tres chanchitos</h3>
+                <p class="autor">Autor: Joseph Jacobs</p>
+                <p class="texto-sinopsis">Tres hermanos cerditos deciden construir sus propias casas en el bosque. El
+                    menor, con prisa por irse a jugar, construye su casa de paja; el del medio la hace de madera; y el
+                    mayor, más paciente y trabajador, edifica una sólida casa de ladrillos. Cuando aparece el Lobo Feroz
+                    con la intención de comérselos, sopla y destruye sin esfuerzo las dos primeras viviendas, obligando
+                    a los cerditos a refugiarse en la casa de ladrillos. Esta resiste todos los soplidos del lobo y los
+                    mantiene a salvo, demostrando la importancia del esfuerzo, la paciencia y la responsabilidad.</p>
+                <a href="#arriba" class="boton-volver">Volver arriba</a>
+            </div>
+
+            <div id="pooh" class="caja-sinopsis">
+                <h3>Winnie the Pooh</h3>
+                <p class="autor">Autor: A. A. Milne</p>
+                <p class="texto-sinopsis">En el entrañable Bosque de los Cien Acres, un pequeño niño llamado Christopher
+                    Robin comparte inolvidables aventuras junto a su tierno osito de peluche, Winnie the Pooh, un amante
+                    de la miel, y sus amigos Piglet, Tigger, Igor, Conejo y Búho. Juntos resuelven pequeños problemas
+                    cotidianos, aprenden valiosas lecciones y celebran la amistad, la empatía y la imaginación.</p>
+                <a href="#arriba" class="boton-volver">Volver arriba</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Proyecto Final Taller Web I - CET N° 30</p>
+    </footer>
+
+</body>
+
+</html>
