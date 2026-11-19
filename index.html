@@ -5,120 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿Qué leemos hoy? - Inicio</title>
-    <style>
-        :root {
-            --color-fondo: #f5ebe0;
-            --color-texto: #3d251e;
-            --color-principal: #5c3d2e;
-            --color-secundario: #7f5539;
-            --color-tarjeta: #e3d5ca;
-            --color-hover: #b08968;
-        }
-
-        body {
-            background-color: var(--color-fondo);
-            color: var(--color-texto);
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        .banner {
-            width: 100%;
-            height: 15rem;
-            display: block;
-        }
-
-        .menu {
-            background-color: var(--color-principal);
-            display: flex;
-            /* Convierte al contenedor en flexible */
-            justify-content: center;
-            /* Centra los elementos horizontalmente */
-            padding: 15px;
-        }
-
-        .menu a {
-            color: var(--color-fondo);
-            text-decoration: none;
-            /* Elimina el subrayado por defecto del enlace */
-            font-weight: bold;
-            font-size: 18px;
-            padding: 10px 20px;
-            margin: 0 10px;
-            background-color: var(--color-secundario);
-
-        }
-
-        /* :hover para cambiar estilos al pasar el cursor */
-        .menu a:hover {
-            background-color: var(--color-hover);
-            color: #ffffffb4;
-        }
-
-        .contenedor {
-            padding: 30px;
-            text-align: center;
-        }
-
-        .titulo-principal {
-            color: #4a2c2a;
-            font-size: 32px;
-            text-transform: uppercase;
-            /* Convierte el texto a mayúsculas */
-            letter-spacing: 2px;
-            /*espacio entre la letra*/
-        }
-
-        .subtitulo {
-            color: var(--color-secundario);
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
-
-
-        .galeria-libros {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            /* hace que los elementos bajen de línea si la pantalla es chica */
-            padding: 20px;
-        }
-
-        .tarjeta-portada:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 0 20px rgba(148, 93, 21, 0.8);
-        }
-
-        .tarjeta-portada {
-            background-color: var(--color-tarjeta);
-            padding: 15px;
-            margin: 10px;
-            width: 200px;
-            position: relative; /* Le dice al brillo que se mueva usando esta caja como límite, sin salirse de ella */
-            overflow: hidden; /* Esconde el brillo cuando está afuera de los bordes, para que solo se vea al cruzar por encima */
-            transition: 0.3s; /* Hace que cualquier movimiento o cambio sea suave y dure 0.3 segundos, en lugar de ser brusco */
-        }
-
-        .tarjeta-portada img {
-            width: 180px;
-            height: 270px;
-        }
-
-        .tarjeta-portada p {
-            font-weight: bold;
-            color: var(--color-texto);
-            margin-top: 10px;
-        }
-
-        footer {
-            background-color: var(--color-texto);
-            color: var(--color-tarjeta);
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -136,8 +23,8 @@
         </nav>
     </header>
 
-    <main class="contenedor">
-        <h1 class="titulo-principal">¿Qué leemos hoy?</h1>
+    <main>
+        <h1>¿Qué leemos hoy?</h1>
         <p class="subtitulo">Seleccioná una categoría para explorar las portadas y sus sinopsis.</p>
 
         <!-- Tarjetas de acceso a las 4 páginas de géneros -->
